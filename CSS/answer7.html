@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>positions-css</title>
+    <style>
+      .container {
+        height: 90vh;
+        position: relative;
+        border: 1px solid black;
+        overflow: auto;
+      }
+
+      .container2 {
+        height: 800px;
+      }
+
+      .box {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 20px;
+      }
+
+      .relative {
+        position: relative;
+        top: 20px;
+        left: 50px;
+        background-color: rgb(255, 170, 59);
+      }
+
+      .absolute {
+        position: absolute;
+        top: 100px;
+        left: 200px;
+        background-color: #5fa7ff;
+      }
+
+      .sticky {
+        position: sticky;
+        top: 50px;
+        background-color: rgb(96, 255, 152);
+      }
+
+      .fixed {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 100px;
+        background-color: rgb(255, 122, 73);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box relative">Relative</div>
+      <div class="box absolute">Absolute</div>
+      <div class="box sticky">Sticky</div>
+      <div class="box fixed">Fixed</div>
+      <div class="container2">Scroll down</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>layout</title>
+  </head>
+  <style>
+    body {
+      background-color: aliceblue;
+    }
+    .header {
+      height: 10vh;
+      background-color: aquamarine;
+      text-align: center;
+    }
+
+    .left {
+      width: 38%;
+      height: 85vh;
+      background-color: chartreuse;
+    }
+
+    .right {
+      width: 60%;
+      background-color: rgb(255, 153, 29);
+      height: 85vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      gap: 20px;
+    }
+
+    .section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    .img {
+      height: 150px;
+      width: 150px;
+      background-color: #fff;
+      margin-bottom: 30px;
+    }
+  </style>
+  <body>
+    <header class="header"></header>
+    <section class="section">
+      <aside class="left"></aside>
+      <article class="right">
+        <div class="img img1"></div>
+        <div class="img img1"></div>
+        <div class="img img1"></div>
+      </article>
+    </section>
+  </body>
+</html>
