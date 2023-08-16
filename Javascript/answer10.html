@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>JavaScript Debounce</h1>
+    <input type="button" id="debounce" value="Click Here" />
+    <script>
+      var button = document.getElementById("debounce");
+      const debounce = (func, wait) => {
+        let debounceTimer;
+        return function () {
+          const context = this;
+          const args = arguments;
+          clearTimeout(debounceTimer);
+          debounceTimer = setTimeout(() => func.apply(context, args), wait);
+        };
+      };
+      button.addEventListener(
+        "click",
+        debounce(function () {
+          alert(
+            "Hello\n This message will be displayed after 3 seconds, and no matters how many times we click the button."
+          );
+        }, 4000)
+      );
+    </script>
+  </body>
+</html>
